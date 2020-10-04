@@ -1,15 +1,15 @@
-import { Component, OnInit, ViewChild, ElementRef } from "@angular/core";
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
-  selector: "app-notification-dropdown",
-  templateUrl: "./notification-dropdown.component.html",
+  selector: 'app-notification-dropdown',
+  templateUrl: './notification-dropdown.component.html',
 })
 export class NotificationDropdownComponent implements OnInit {
   dropdownPopoverShow = false;
-  @ViewChild("btnDropdownRef", { static: false }) btnDropdownRef: ElementRef;
-  
+  @ViewChild('btnDropdownRef', { static: false }) btnDropdownRef: ElementRef;
+
   ngOnInit() {
-    
+
   }
   toggleDropdown(event) {
     event.preventDefault();
@@ -22,9 +22,9 @@ export class NotificationDropdownComponent implements OnInit {
     }
   }
   destroyPopper() {
-    
+
   }
   createPoppper() {
-    
+
   }
 }

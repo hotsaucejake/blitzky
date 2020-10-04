@@ -1,14 +1,14 @@
-import { Component, OnInit, ViewChild, ElementRef } from "@angular/core";
-import { createPopper } from "@popperjs/core";
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { createPopper } from '@popperjs/core';
 
 @Component({
-  selector: "app-index-dropdown",
-  templateUrl: "./index-dropdown.component.html",
+  selector: 'app-index-dropdown',
+  templateUrl: './index-dropdown.component.html',
 })
 export class IndexDropdownComponent implements OnInit {
   dropdownPopoverShow = false;
-  @ViewChild("btnDropdownRef", { static: false }) btnDropdownRef: ElementRef;
-  @ViewChild("popoverDropdownRef", { static: false })
+  @ViewChild('btnDropdownRef', { static: false }) btnDropdownRef: ElementRef;
+  @ViewChild('popoverDropdownRef', { static: false })
   popoverDropdownRef: ElementRef;
   ngOnInit() {}
   toggleDropdown(event) {
@@ -25,7 +25,7 @@ export class IndexDropdownComponent implements OnInit {
       this.btnDropdownRef.nativeElement,
       this.popoverDropdownRef.nativeElement,
       {
-        placement: "bottom-start",
+        placement: 'bottom-start',
       }
     );
   }

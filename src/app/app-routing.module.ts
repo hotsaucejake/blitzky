@@ -32,6 +32,7 @@ const routes: Routes = [
         children: [
             { path: 'index', component: DashboardIndexComponent },
             { path: '', redirectTo: 'index', pathMatch: 'full' },
+            { path: '**', redirectTo: 'index', pathMatch: 'full' },
         ],
     },
     // admin views

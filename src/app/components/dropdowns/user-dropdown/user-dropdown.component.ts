@@ -1,15 +1,15 @@
-import { Component, OnInit, ViewChild, ElementRef } from "@angular/core";
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 
 
 @Component({
-  selector: "app-user-dropdown",
-  templateUrl: "./user-dropdown.component.html",
+  selector: 'app-user-dropdown',
+  templateUrl: './user-dropdown.component.html',
 })
 export class UserDropdownComponent implements OnInit {
   dropdownPopoverShow = false;
-  @ViewChild("btnDropdownRef", { static: false }) btnDropdownRef: ElementRef;
+  @ViewChild('btnDropdownRef', { static: false }) btnDropdownRef: ElementRef;
   ngOnInit() {
-    
+
   }
   toggleDropdown(event) {
     event.preventDefault();
@@ -25,6 +25,6 @@ export class UserDropdownComponent implements OnInit {
 
   }
   createPoppper() {
-    
+
   }
 }

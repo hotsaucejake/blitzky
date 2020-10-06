@@ -5,10 +5,10 @@ import { Routes, RouterModule } from '@angular/router';
 // import { AdminComponent } from "./layouts/admin/admin.component";
 // import { AuthComponent } from "./layouts/auth/auth.component";
 import { DashboardComponent } from './layouts/dashboard/dashboard.component';
+import { BitcloudsComponent } from './views/dashboard/bitclouds/bitclouds.component';
 
 // admin views
 // import { DashboardComponent } from "./views/admin/dashboard/dashboard.component";
-// import { MapsComponent } from "./views/admin/maps/maps.component";
 // import { SettingsComponent } from "./views/admin/settings/settings.component";
 // import { TablesComponent } from "./views/admin/tables/tables.component";
 
@@ -30,6 +30,7 @@ const routes: Routes = [
         path: 'dashboard',
         component: DashboardComponent,
         children: [
+            { path: 'bitclouds', component: BitcloudsComponent },
             { path: 'index', component: DashboardIndexComponent },
             { path: '', redirectTo: 'index', pathMatch: 'full' },
             { path: '**', redirectTo: 'index', pathMatch: 'full' },
@@ -43,7 +44,6 @@ const routes: Routes = [
     //     { path: "dashboard", component: DashboardComponent },
     //     { path: "settings", component: SettingsComponent },
     //     { path: "tables", component: TablesComponent },
-    //     { path: "maps", component: MapsComponent },
     //     { path: "", redirectTo: "dashboard", pathMatch: "full" },
     //   ],
     // },

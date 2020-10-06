@@ -11,7 +11,6 @@ import { DashboardComponent } from './layouts/dashboard/dashboard.component';
 
 // admin views
 import { DashboardComponent as AdminDashboardComponent } from './views/admin/dashboard/dashboard.component';
-import { MapsComponent } from './views/admin/maps/maps.component';
 import { SettingsComponent } from './views/admin/settings/settings.component';
 import { TablesComponent } from './views/admin/tables/tables.component';
 
@@ -41,7 +40,6 @@ import { FooterComponent } from './components/footers/footer/footer.component';
 import { FooterSmallComponent } from './components/footers/footer-small/footer-small.component';
 import { HeaderStatsComponent } from './components/headers/header-stats/header-stats.component';
 import { IndexNavbarComponent } from './components/navbars/index-navbar/index-navbar.component';
-import { MapExampleComponent } from './components/maps/map-example/map-example.component';
 import { IndexDropdownComponent } from './components/dropdowns/index-dropdown/index-dropdown.component';
 import { TableDropdownComponent } from './components/dropdowns/table-dropdown/table-dropdown.component';
 import { PagesDropdownComponent } from './components/dropdowns/pages-dropdown/pages-dropdown.component';
@@ -51,51 +49,52 @@ import { UserDropdownComponent } from './components/dropdowns/user-dropdown/user
 import { DashboardIndexComponent } from './views/dashboard/dashboard-index/dashboard-index.component';
 import { DashboardNavbarComponent } from './components/navbars/dashboard-navbar/dashboard-navbar.component';
 import { FooterDashboardComponent } from './components/footers/footer-dashboard/footer-dashboard.component';
+import { BitcloudsComponent } from './views/dashboard/bitclouds/bitclouds.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    AdminDashboardComponent,
-    DashboardComponent,
-    CardBarChartComponent,
-    CardLineChartComponent,
-    IndexDropdownComponent,
-    PagesDropdownComponent,
-    TableDropdownComponent,
-    NotificationDropdownComponent,
-    UserDropdownComponent,
-    SidebarComponent,
-    FooterComponent,
-    FooterSmallComponent,
-    FooterAdminComponent,
-    CardPageVisitsComponent,
-    CardProfileComponent,
-    CardSettingsComponent,
-    CardSocialTrafficComponent,
-    CardStatsComponent,
-    CardTableComponent,
-    HeaderStatsComponent,
-    MapExampleComponent,
-    AuthNavbarComponent,
-    AdminNavbarComponent,
-    IndexNavbarComponent,
-    AdminComponent,
-    AuthComponent,
-    MapsComponent,
-    SettingsComponent,
-    TablesComponent,
-    LoginComponent,
-    RegisterComponent,
-    IndexComponent,
-    LandingComponent,
-    ProfileComponent,
-    DashboardIndexComponent,
-    DashboardNavbarComponent,
-    FooterDashboardComponent,
-  ],
-  imports: [BrowserModule, AppRoutingModule],
-  providers: [],
-  bootstrap: [AppComponent],
+    declarations: [
+        AppComponent,
+        AdminDashboardComponent,
+        DashboardComponent,
+        CardBarChartComponent,
+        CardLineChartComponent,
+        IndexDropdownComponent,
+        PagesDropdownComponent,
+        TableDropdownComponent,
+        NotificationDropdownComponent,
+        UserDropdownComponent,
+        SidebarComponent,
+        FooterComponent,
+        FooterSmallComponent,
+        FooterAdminComponent,
+        CardPageVisitsComponent,
+        CardProfileComponent,
+        CardSettingsComponent,
+        CardSocialTrafficComponent,
+        CardStatsComponent,
+        CardTableComponent,
+        HeaderStatsComponent,
+        AuthNavbarComponent,
+        AdminNavbarComponent,
+        IndexNavbarComponent,
+        AdminComponent,
+        AuthComponent,
+        SettingsComponent,
+        TablesComponent,
+        LoginComponent,
+        RegisterComponent,
+        IndexComponent,
+        LandingComponent,
+        ProfileComponent,
+        DashboardIndexComponent,
+        DashboardNavbarComponent,
+        FooterDashboardComponent,
+        BitcloudsComponent,
+    ],
+    imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+    providers: [],
+    bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }

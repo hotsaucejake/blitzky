@@ -5,7 +5,6 @@ import { Routes, RouterModule } from '@angular/router';
 // import { AdminComponent } from "./layouts/admin/admin.component";
 // import { AuthComponent } from "./layouts/auth/auth.component";
 import { DashboardComponent } from './layouts/dashboard/dashboard.component';
-import { BitcloudsComponent } from './views/dashboard/bitclouds/bitclouds.component';
 
 // admin views
 // import { DashboardComponent } from "./views/admin/dashboard/dashboard.component";
@@ -17,7 +16,9 @@ import { BitcloudsComponent } from './views/dashboard/bitclouds/bitclouds.compon
 // import { RegisterComponent } from "./views/auth/register/register.component";
 
 // dashboard views
+import { BitcloudsComponent } from './views/dashboard/bitclouds/bitclouds.component';
 import { DashboardIndexComponent } from './views/dashboard/dashboard-index/dashboard-index.component';
+import { LnpayComponent } from './views/dashboard/lnpay/lnpay.component';
 
 // no layouts views
 // import { IndexComponent } from "./views/index/index.component";
@@ -32,6 +33,7 @@ const routes: Routes = [
         children: [
             { path: 'bitclouds', component: BitcloudsComponent },
             { path: 'index', component: DashboardIndexComponent },
+            { path: 'lnpay', component: LnpayComponent },
             { path: '', redirectTo: 'index', pathMatch: 'full' },
             { path: '**', redirectTo: 'index', pathMatch: 'full' },
         ],

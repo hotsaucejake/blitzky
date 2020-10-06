@@ -51,6 +51,7 @@ import { DashboardNavbarComponent } from './components/navbars/dashboard-navbar/
 import { FooterDashboardComponent } from './components/footers/footer-dashboard/footer-dashboard.component';
 import { BitcloudsComponent } from './views/dashboard/bitclouds/bitclouds.component';
 import { HttpClientModule } from '@angular/common/http';
+import { LnpayComponent } from './views/dashboard/lnpay/lnpay.component';
 
 
 @NgModule({
@@ -92,6 +93,7 @@ import { HttpClientModule } from '@angular/common/http';
         DashboardNavbarComponent,
         FooterDashboardComponent,
         BitcloudsComponent,
+        LnpayComponent,
     ],
     imports: [BrowserModule, AppRoutingModule, HttpClientModule],
     providers: [],

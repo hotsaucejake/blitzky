@@ -19,7 +19,7 @@ export class BitcloudsService {
     // public async getImages(): Promise<Observable<any>> {
     //     const resp = await this.http.get(`${this.baseUrl}/images`, {
     //         headers: {
-                
+
     //         }
     //     });
     //     console.log(resp);

@@ -30,6 +30,32 @@
 
             </div>
 
+            <div class="block w-full overflow-x-auto" *ngIf="!!preimage.pr">
+
+                <div class="mt-1 py-1 px-4 border-t border-gray-300">
+                    <div class="flex flex-wrap justify-center">
+                        <div class="w-full lg:w-3/12 px-4">
+                            <qrcode 
+                                [qrdata]="preimage.pr" 
+                                [width]="256" 
+                                [margin]="4"
+                                [scale]="4"
+                                [errorCorrectionLevel]="'M'">
+                            </qrcode>
+                        </div>
+                        <div class="w-full lg:w-9/12 px-4">
+                            <p class="py-3 text-gray-800">
+                                {{ preimage.successAction.description }}
+                            </p>
+                            <p class="py-3 text-gray-800">
+                                {{ preimage.pr }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
             <div class="block w-full overflow-x-auto">
 
                 <div class="mt-1 py-1 px-4 border-t border-gray-300">

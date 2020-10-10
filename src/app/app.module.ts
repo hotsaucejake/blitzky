@@ -53,6 +53,9 @@ import { BitcloudsComponent } from './views/dashboard/bitclouds/bitclouds.compon
 import { HttpClientModule } from '@angular/common/http';
 import { LnpayComponent } from './views/dashboard/lnpay/lnpay.component';
 
+// 3rd party
+import { QRCodeModule } from 'angularx-qrcode';
+
 
 @NgModule({
     declarations: [
@@ -95,7 +98,12 @@ import { LnpayComponent } from './views/dashboard/lnpay/lnpay.component';
         BitcloudsComponent,
         LnpayComponent,
     ],
-    imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+    imports: [
+        AppRoutingModule, 
+        BrowserModule, 
+        HttpClientModule,
+        QRCodeModule
+    ],
     providers: [],
     bootstrap: [AppComponent],
 })
